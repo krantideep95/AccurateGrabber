@@ -1,0 +1,22 @@
+table- usermaster
+username string
+password string
+name string
+contact num number
+
+table- userlog
+actid int
+username string
+login datetime
+logout datetime
+
+
+
+
+userid
+username
+password
+name
+contactno
+address
+email
