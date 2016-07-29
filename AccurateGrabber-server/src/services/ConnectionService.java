@@ -15,6 +15,7 @@ import java.sql.PreparedStatement;
  * @author kranti
  */
 public class ConnectionService {
+	pass="";
      public static Connection connect() {
         Connection conn = null;
         PreparedStatement pstmt = null;
@@ -23,7 +24,7 @@ public class ConnectionService {
             String url = "jdbc:mysql:///userlogger";
             Driver driver = (Driver) driver_class.newInstance();
             DriverManager.registerDriver(driver);
-            conn = DriverManager.getConnection(url, "root", "ch01z1105");
+            conn = DriverManager.getConnection(url, "root", pass);
         } catch (Exception e) {
             System.out.println(e);
 
